@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .container{
+            margin-top: 350px;
+            text-align: center;
+            background-color: darkcyan;
+            margin-right: auto;
+            margin-left: auto;
+            width: 500px;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clock</h1>
+        <h3>current time now:</h3>
+        <span id="time"></span>
+    </div>
+    <script>
+   
+    function displayTIme(){
+        var time=new Date();
+    
+        document.getElementById("time").innerHTML=time;
+    }
+    intervalId=setInterval(displayTIme,1000);
+
+    </script>
+</body>
+</html>
